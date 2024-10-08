@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutVC" customModule="ScholarSync_Shameer" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="I7b-Kg-c5P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5A6-xM-vfE">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About ScholarSync" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oAK-B6-YBJ">
+                            <rect key="frame" x="84.333333333333329" y="65" width="224.66666666666669" height="30"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="oAK-B6-YBJ" secondAttribute="bottom" constant="25" id="9rN-lz-z2e"/>
+                        <constraint firstAttribute="height" constant="120" id="Mhp-0K-zDw"/>
+                        <constraint firstItem="oAK-B6-YBJ" firstAttribute="centerX" secondItem="5A6-xM-vfE" secondAttribute="centerX" id="X3w-ph-hq5"/>
+                    </constraints>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="S2g-w0-6YY">
+                    <rect key="frame" x="10" y="130" width="373" height="668"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <string key="text">ScholarSync is your ultimate companion in navigating the complex world of scholarships. Our mission is to simplify your search for financial aid by providing a centralized database of scholarships from various sources. 
+
+We understand the challenges and time constraints students face, which is why we designed ScholarSync to be intuitive, comprehensive, and user-friendly. 
+Whether you're a high school junior, senior, or a college student, ScholarSync is here to help you find opportunities tailored to your needs. \nEmpower your academic journey with ScholarSync, where your future starts today.
+
+
+How ScholarSync Works?
+
+• Data Aggregation: ScholarSync scours the internet, aggregating scholarships from reputable sources, ensuring our database is both extensive and reliable.
+• Centralized Database: All scholarships are stored in a centralized database, categorized by eligibility criteria, award amounts, deadlines, and more, making it easy for you to find what you need.</string>
+                    <color key="textColor" systemColor="labelColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="S2g-w0-6YY" firstAttribute="top" secondItem="5A6-xM-vfE" secondAttribute="bottom" constant="10" id="H6b-0g-or4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="S2g-w0-6YY" secondAttribute="trailing" constant="10" id="MeX-8n-hdd"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="S2g-w0-6YY" secondAttribute="bottom" constant="20" id="aHv-zG-WdY"/>
+                <constraint firstItem="S2g-w0-6YY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="bb8-jU-BSA"/>
+                <constraint firstItem="5A6-xM-vfE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="nvI-2f-R62"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5A6-xM-vfE" secondAttribute="trailing" id="ola-fJ-xr7"/>
+                <constraint firstItem="5A6-xM-vfE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xSR-xP-dWi"/>
+            </constraints>
+            <point key="canvasLocation" x="-83" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

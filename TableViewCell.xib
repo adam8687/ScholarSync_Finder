@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="210" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="ScholarSync" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ait-ta-1IF">
+                        <rect key="frame" x="10" y="9.9999999999999982" width="260" height="20.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" name="MainColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-YZ-ec6">
+                        <rect key="frame" x="103" y="40" width="14" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOb-oe-Hk7">
+                        <rect key="frame" x="103" y="67" width="14" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDQ-Tp-fC0">
+                        <rect key="frame" x="263" y="89.666666666666671" width="37" height="31"/>
+                        <color key="tintColor" systemColor="systemPinkColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" image="heart" catalog="system">
+                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                        </state>
+                        <connections>
+                            <action selector="favoritesButton_tapHandler:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zy7-1n-pJH"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Award Worth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nz2-bd-O58" userLabel="Amount Title Label">
+                        <rect key="frame" x="10" y="40.333333333333336" width="83" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deadline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x01-Sh-pcf" userLabel="Deadline Title Label">
+                        <rect key="frame" x="9.9999999999999964" y="67.333333333333329" width="56.666666666666657" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade Level" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOo-s2-DUf" userLabel="Grade Level Label">
+                        <rect key="frame" x="10" y="94.333333333333329" width="77" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpo-VJ-mGa" userLabel="---Ending Soon Button">
+                        <rect key="frame" x="208" y="181" width="102" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="102" id="8k7-Px-aXI"/>
+                            <constraint firstAttribute="height" constant="19" id="uxl-eC-hYg"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemRedColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="Ending Soon">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="13"/>
+                        </buttonConfiguration>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDA-53-ctu">
+                        <rect key="frame" x="103" y="94" width="14" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="n4p-YZ-ec6" firstAttribute="centerY" secondItem="nz2-bd-O58" secondAttribute="centerY" id="2HJ-hc-tJK"/>
+                    <constraint firstItem="iDQ-Tp-fC0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="2QJ-x4-Lku"/>
+                    <constraint firstItem="IDA-53-ctu" firstAttribute="centerY" secondItem="GOo-s2-DUf" secondAttribute="centerY" id="6Iw-PG-c61"/>
+                    <constraint firstItem="nz2-bd-O58" firstAttribute="top" secondItem="ait-ta-1IF" secondAttribute="bottom" constant="10" id="989-ZR-Yg8"/>
+                    <constraint firstItem="nz2-bd-O58" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AZm-EB-mOW"/>
+                    <constraint firstAttribute="trailing" secondItem="iDQ-Tp-fC0" secondAttribute="trailing" constant="20" id="Jh0-sJ-d91"/>
+                    <constraint firstItem="x01-Sh-pcf" firstAttribute="top" secondItem="nz2-bd-O58" secondAttribute="bottom" constant="10" id="Jra-aw-WxP"/>
+                    <constraint firstItem="x01-Sh-pcf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Lvq-im-Bbt"/>
+                    <constraint firstItem="ait-ta-1IF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="PWa-Uh-20b"/>
+                    <constraint firstAttribute="trailing" secondItem="ait-ta-1IF" secondAttribute="trailing" constant="50" id="Re3-kE-xfK"/>
+                    <constraint firstItem="n4p-YZ-ec6" firstAttribute="leading" secondItem="nz2-bd-O58" secondAttribute="trailing" constant="10" id="ZMO-wz-Ftq"/>
+                    <constraint firstItem="aOb-oe-Hk7" firstAttribute="leading" secondItem="n4p-YZ-ec6" secondAttribute="leading" id="Zem-cP-GG0"/>
+                    <constraint firstAttribute="bottom" secondItem="Bpo-VJ-mGa" secondAttribute="bottom" constant="10" id="fZZ-PV-U1w"/>
+                    <constraint firstAttribute="trailing" secondItem="Bpo-VJ-mGa" secondAttribute="trailing" constant="10" id="m2X-3h-nWJ"/>
+                    <constraint firstItem="aOb-oe-Hk7" firstAttribute="centerY" secondItem="x01-Sh-pcf" secondAttribute="centerY" id="qUC-Uu-ou4"/>
+                    <constraint firstItem="GOo-s2-DUf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="s5f-gN-RNR"/>
+                    <constraint firstItem="IDA-53-ctu" firstAttribute="leading" secondItem="aOb-oe-Hk7" secondAttribute="leading" id="tkE-eI-6Wp"/>
+                    <constraint firstItem="ait-ta-1IF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="v0w-QX-3IF"/>
+                    <constraint firstItem="GOo-s2-DUf" firstAttribute="top" secondItem="x01-Sh-pcf" secondAttribute="bottom" constant="10" id="veh-mi-gJ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="amountLabel" destination="n4p-YZ-ec6" id="sx5-IG-rbe"/>
+                <outlet property="deadlineLabel" destination="aOb-oe-Hk7" id="wkQ-qQ-SHx"/>
+                <outlet property="endingSoonButton" destination="Bpo-VJ-mGa" id="kGr-hh-HQu"/>
+                <outlet property="endingSoonLabel" destination="IDA-53-ctu" id="3AZ-RK-Bnt"/>
+                <outlet property="favoritesButton" destination="iDQ-Tp-fC0" id="tii-I5-E2X"/>
+                <outlet property="gradeLevelLabel" destination="IDA-53-ctu" id="3xA-gG-f8x"/>
+                <outlet property="titleLabel" destination="ait-ta-1IF" id="lzI-C6-o1d"/>
+            </connections>
+            <point key="canvasLocation" x="164.8854961832061" y="90.140845070422543"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="heart" catalog="system" width="128" height="107"/>
+        <namedColor name="MainColor">
+            <color red="0.098039215686274508" green="0.21176470588235294" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
